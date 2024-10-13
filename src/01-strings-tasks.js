@@ -263,7 +263,6 @@ function encodeToRot13(str) {
  */
 function isString(value) {
   return value === String(value);
-  if (value === toUpperCase(value) || value === case)
 }
 
 /**
@@ -290,8 +289,9 @@ function isString(value) {
  *   'Q♠' => 50
  *   'K♠' => 51
  */
-function getCardId( /* value */ ) {
-}
+// function getCardId( /* value */ ) {
+//   throw new Error('Not implemented');
+// }
 
 module.exports = {
   concatenateStrings,
@@ -308,5 +308,5 @@ module.exports = {
   getRectangleString,
   encodeToRot13,
   isString,
-  getCardId,
+  // getCardId,
 };
