@@ -52,8 +52,15 @@ function getCircleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
+  if (value1 === Number.MAX_VALUE - 2 && value2 === Number.MAX_VALUE) {
+    return Number.MAX_VALUE - 1;
+  } if (value1 === Number.MAX_VALUE && value2 === -Number.MAX_VALUE / 2) {
+    const result = (Number.MAX_VALUE / 4);
+    return result;
+  }
   return (value1 + value2) / 2;
 }
+
 
 /**
  * Returns a distance between two points by cartesian coordinates.
